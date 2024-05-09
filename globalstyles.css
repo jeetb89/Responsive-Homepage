@@ -57,8 +57,9 @@ body{
     align-items: center;
     color:var(--white);
     background:var(--dark-blue);
-   width:28%;
+   width:45%;
     font-weight: lighter;
+    text-align: center;
 }
 
 
@@ -71,7 +72,6 @@ body{
     color: var(--dark-blue);
     font-size: 1.3rem;
     text-align: center;
-    width: 115%;
     align-items: center;
 }
 .action-container {
@@ -92,14 +92,14 @@ body{
 .take-action-btn {
     position: relative;
     font-size: 0.8rem;
-    bottom: 20px;
+    bottom: 50%;
     height: 6vh;
     text-align: center;
 }
 
 .content-styling{
     border-radius: 100%; 
-    width: 30px;
+    width: 10%;
     height: 30px; 
     background-color:var(--green);
 }

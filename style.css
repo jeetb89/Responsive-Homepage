@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Flood Std';
     src: url('./fonts/floodstd.otf') format('opentype');
@@ -13,138 +14,10 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    font-family: Helvetica;
-    color: var(--dark-blue);
-}
-.pages p{
-    text-decoration:none; 
-}
-
-.stop-container {
-    background-color: rgb(53, 68, 99);
-}
-
-.stop-container .title {
-    font-family: 'Flood Std';
-    
-}
-.btn-green {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--green);
-    color: var(--dark-blue);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 100px;
-    opacity: 1;
-    height: 7vh;
-    font-size: 1.125rem;
-    margin: 15% 0%;
-}
-
-.btn-green:hover {
-    color: var(--green);
-    background-color: var(--dark-blue);
-
-}
-
-.btn-black {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:var(--white);
-    background:var(--dark-blue);
-   width:28%;
-    font-weight: lighter;
-}
-
-
-.btn-white {
-    display: flex;
-    justify-content: center;
-    background: var(--silver);
-    font-weight: lighter;
-    height: 5vh;
-    color: var(--dark-blue);
-    font-size: 1.3rem;
-    text-align: center;
-    width: 115%;
-    align-items: center;
-}
-.action-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color:var(--green);
-    justify-content: space-evenly;
-    padding: 0% 5% 5% 5%;
-}
-
-.action-heading{
-    width: 100%;
-     display: flex;
-      position: relative; 
-      justify-content: center; 
-    margin-bottom: 5%;   
-}
-.take-action-btn {
-    position: relative;
-    font-size: 0.8rem;
-    bottom: 20px;
-    height: 6vh;
-    text-align: center;
-}
-
-.content-styling{
-    border-radius: 100%; 
-    width: 30px;
-    height: 30px; 
-    background-color:var(--green);
-}
-.issue p{
-  width:60%;
-  line-height: 120%;
-  color:var(--dark-blue);
-}
-
-.issue-heading h2 {
-    font-family: 'Flood Std';
-    font-size: 3.0rem;
-}
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mission-list p{
-    color:var(--dark-blue);
-}
-
-
-
-.event-container h1 {
-    font-family: 'Flood Std', Arial, Helvetica, sans-serif;
-    font-size: 2.75rem;
-}
-
-.footer{
-    padding: 5% 10% 10% 10%;
-}
-.footer h1 {
-    font-family: 'Flood Std', Arial, Helvetica, sans-serif;
-    font-size: 2.75rem;
-
-}
-
-.footer-contact h5{
-    text-decoration: underline ;
-}
 /* Mobile */
 @media only screen and (max-width: 767px) {
     
-    .header {
+    .navbar {
         display: grid;
         grid-template-areas: "title page"
             "btn  btn";
@@ -314,7 +187,8 @@ body{
         position: relative;
         bottom: -15px;
         height: 8vh;
-        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .issue {
@@ -473,9 +347,7 @@ body{
     .input-div input {
         border: none;
         outline: none;
-        font-size: 0.7em;
-        
-        width: inherit;
+        font-size: 0.7rem;
 
     }
 
@@ -511,7 +383,7 @@ body{
 }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .header {
+    .navbar {
         display: grid;
         grid-template-areas: "title btn"
             "page  btn";
@@ -762,15 +634,13 @@ body{
     }
 
     .input-div {
-        width: 65%;
+        width: 50%;
         background-color: var(--white);
         border-radius: 100px;
-        height: 40px;
-        padding: 4px;
     }
 
     .input-div input {
-
+        font-size: 1rem; 
         border: none;
         outline: none;
     }
@@ -815,7 +685,7 @@ body{
 
 /* Desktop */
 @media only screen and (min-width: 1023px) {
-    .header {
+    .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1060,7 +930,6 @@ body{
     }
 
     .input-div input {
-
         border: none;
         outline: none;
     }
@@ -1117,7 +986,9 @@ body{
         position: relative;
         bottom: -15px;
         height: 8vh;
-        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+    
     }
 
     .issue-list {
