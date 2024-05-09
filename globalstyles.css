@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Flood Std';
+    src: url('./fonts/floodstd.otf') format('opentype');
+}
+:root{
+    --dark-blue:#354463;
+    --green: #C1F7D5;
+    --white: #ffffff; 
+    --silver: #ffffffc9;
+}
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica;
+    color: var(--dark-blue);
+}
+.pages p{
+    text-decoration:none; 
+}
+
+.stop-container {
+    background-color: rgb(53, 68, 99);
+}
+
+.stop-container .title {
+    font-family: 'Flood Std';
+    
+}
+.btn-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100px;
+    opacity: 1;
+    height: 7vh;
+    font-size: 1.125rem;
+    margin: 15% 0%;
+}
+
+.btn-green:hover {
+    color: var(--green);
+    background-color: var(--dark-blue);
+
+}
+
+.btn-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    background:var(--dark-blue);
+   width:45%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    background: var(--silver);
+    font-weight: lighter;
+    height: 5vh;
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+}
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:var(--green);
+    justify-content: space-evenly;
+    padding: 0% 5% 5% 5%;
+}
+
+.action-heading{
+    width: 100%;
+     display: flex;
+      position: relative; 
+      justify-content: center; 
+    margin-bottom: 5%;   
+}
+.take-action-btn {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 50%;
+    height: 6vh;
+    text-align: center;
+}
+
+.content-styling{
+    border-radius: 100%; 
+    width: 10%;
+    height: 30px; 
+    background-color:var(--green);
+}
+.issue p{
+  width:60%;
+  line-height: 120%;
+  color:var(--dark-blue);
+}
+
+.issue-heading h2 {
+    font-family: 'Flood Std';
+    font-size: 3.0rem;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mission-list p{
+    color:var(--dark-blue);
+}
+
+
+
+.event-container h1 {
+    font-family: 'Flood Std', Arial, Helvetica, sans-serif;
+    font-size: 2.75rem;
+}
+
+.footer{
+    padding: 5% 10% 10% 10%;
+}
+.footer h1 {
+    font-family: 'Flood Std', Arial, Helvetica, sans-serif;
+    font-size: 2.75rem;
+
+}
+
+.footer-contact h5{
+    text-decoration: underline ;
+}
