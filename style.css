@@ -2,7 +2,6 @@
     font-family: 'Flood Std';
     src: url('./fonts/floodstd.otf') format('opentype');
 }
-
 :root{
     --dark-blue:#354463;
     --green: #C1F7D5;
@@ -192,7 +191,6 @@ body{
         color:var(--white);
         font-size: 2rem;
         margin: 15% 0%;
-
     }
 
     .stop-content-container {
